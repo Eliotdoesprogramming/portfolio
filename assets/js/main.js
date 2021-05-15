@@ -90,8 +90,12 @@
 				usePopupDefaultStyling: false,
 				usePopupCaption: true,
 				popupLoaderText: '',
-				windowMargin: 50,
-				usePopupNav: true
+				windowMargin: 20,
+				usePopupNav: true,
+				popupCaptionHeight: 909,
+				caption: function(a){
+					return $(`<p>${a.find('span').text()}</p>`).css('background-color','white').css('line-height','2em');
+				}
 			});
 
 			// Hack: Adjust margins when 'small' activates.
