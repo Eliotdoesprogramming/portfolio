@@ -3,3 +3,7 @@ $.getJSON("https://ipgeolocation.abstractapi.com/v1/?api_key=3ea2407fd49341df865
  function(data) {
     $('#welcome').append(`<span>${data.city}, ${data.region}</span>`)
 })
+
+redirect = (url) => {
+    window.location.href = url
+}
